@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jquery Functions</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.click').click(function(){
+            alert("Welcome to Digital Reality Crew")
+        })
+        $('.hide').click(function(){
+            $(".hide").hide()
+        })
+        $('.show').click(function(){
+            $(".hide").show()
+        })
+        $('.toggle').click(function(){
+            $(".hide").toggle()
+        })
+        $('.slideDown').click(function(){
+            $(".hidden").slideDown()
+        })
+        $('.slideUp').click(function(){
+            $("#slideUp").slideUp()
+        })
+        $('.slideToggle').click(function(){
+            $("#slideToggle").slideToggle()
+        })
+    })
+
+    </script>
+    <style type="text/css">
+        .pink{
+            color:pink;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Click</legend>
+        <p>CLICK ME!</p>
+        <button class="click">CLICK</button>
+    </fieldset>
+    <fieldset>
+        <legend>Hide</legend>
+        <p>BUTTON GOES POOF</p>
+        <button class="hide">POOF!</button>
+    </fieldset>
+    <fieldset>
+        <legend>Show</legend>
+        <p>SUMMON BUTTON!</p>
+        <button class="show">SUMMON!</button>
+    </fieldset>
+    <fieldset>
+        <legend>Toggle</legend>
+        <p>DISAPPEAR AND REAPPEAR HIDE BUTTON</p>
+        <button class="toggle">HOCUS POCUS!</button>
+    </fieldset>
+    <fieldset>
+        <legend>slideDown</legend>
+        <p>SIM SALA BIM!</p>
+        <p class="hidden" hidden>Hidden Words Appear</p>
+        <button class="slideDown">REVEAL!</button>
+    </fieldset>
+    <fieldset>
+        <legend>slideUp</legend>
+        <p>WALLA WALLA WASHINGTON!</p>
+        <p id="slideUp">Words Disappear!</p>
+        <button class="slideUp">BE GONE!</button>
+    </fieldset>
+    <fieldset>
+        <legend>slideToggle</legend>
+        <p>ABRACA-POCUS!</p>
+        <p id="slideToggle">Words Disappear and reappear!</p>
+        <button class="slideToggle">KAZAM!</button>
+    </fieldset>
+
+</body>
